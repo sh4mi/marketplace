@@ -1,0 +1,29 @@
+{% extends 'layouts/default/master.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+<div class="row mt-5">
+    <div class="container col-md-5">
+        <img src="{% static 'img/signup.jpg' %}" alt="">
+    </div>
+    <div class="container col-md-4">
+        <h4 class="mb-3">{% trans 'Become a Vendor' %}</h4>
+
+        <form method="post">
+
+            {% csrf_token %}
+            {% for field in form %}
+            {% bootstrap_field field show_help=False %}
+            {% endfor %}
+
+            <button class="btn btn-primary">{% trans 'Become Vendor' %}</button>
+
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock %}

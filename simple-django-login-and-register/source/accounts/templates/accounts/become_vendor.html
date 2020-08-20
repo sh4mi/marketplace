@@ -1,0 +1,163 @@
+{% extends 'layouts/default/master.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/become_vendor.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+<!-- Banner Section Begin -->
+<section class="banner set-bg" style="height: 333px;" data-setbg="{% static 'img/banner/vendor_banner.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7 col-lg-8 m-auto">
+                <!-- <div class="banner__slider owl-carousel">
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span>The Chloe Collection</span>
+                            <h1>The Project Jacket</h1>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span>The Chloe Collection</span>
+                            <h1>The Project Jacket</h1>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span>The Chloe Collection</span>
+                            <h1>The Project Jacket</h1>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner Section End -->
+
+<!-- Services Section Begin -->
+<section class="services spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-car"></i>
+                    <h6>Free Shipping</h6>
+                    <p>For all oder over $99</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-money"></i>
+                    <h6>Money Back Guarantee</h6>
+                    <p>If good have Problems</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-support"></i>
+                    <h6>Online Support 24/7</h6>
+                    <p>Dedicated support</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-headphones"></i>
+                    <h6>Payment Secure</h6>
+                    <p>100% secure payment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services Section End -->
+
+
+<div class="container">
+    <div class="iconcontainer">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="iconbox">
+                    <div class="iconbox-icon">
+                        <span class="glyphicon glyphicon-book"></span>
+                    </div>
+                    <div class="featureinfo">
+                        <h4 class="text-center">Title</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam
+                            aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi
+                            dolorem architecto perferendis quas aperiam debitis dolor soluta!
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="iconbox">
+                    <div class="iconbox-icon">
+                        <span class="glyphicon glyphicon-tasks"></span>
+                    </div>
+                    <div class="featureinfo">
+                        <h4 class="text-center">Title</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam
+                            aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi
+                            dolorem architecto perferendis quas aperiam debitis dolor soluta!
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="iconbox">
+                    <div class="iconbox-icon">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </div>
+                    <div class="featureinfo">
+                        <h4 class="text-center">Title</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam
+                            aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi
+                            dolorem architecto perferendis quas aperiam debitis dolor soluta!
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="iconbox">
+                    <div class="iconbox-icon">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <div class="featureinfo">
+                        <h4 class="text-center">Title</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam
+                            aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi
+                            dolorem architecto perferendis quas aperiam debitis dolor soluta!
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product__details__button text-center ">
+
+    <a href="{% url 'accounts:register_vendor'%}" class="cart-btn float-none mt-5"><span class="icon_bag_alt"></span>
+        Become Vendor</a>
+
+</div>
+
+{% endblock %}

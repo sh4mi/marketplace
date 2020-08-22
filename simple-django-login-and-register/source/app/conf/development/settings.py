@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
+    'rest_framework',
     # Vendor apps
     'bootstrap4',
 
@@ -32,6 +33,7 @@ INSTALLED_APPS = [
     'accounts',
     'shops',
     'dashboard',
+    'api'
 ]
 
 MIDDLEWARE = [

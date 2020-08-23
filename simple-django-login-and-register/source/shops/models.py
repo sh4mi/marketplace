@@ -36,8 +36,8 @@ class Image(models.Model):
                               verbose_name='product_image')
     created_at = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return self.name
+    # def __str__(self):
+    #     return self.image
 
 
 class Category(models.Model):

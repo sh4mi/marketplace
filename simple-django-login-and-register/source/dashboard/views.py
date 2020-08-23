@@ -12,8 +12,24 @@ class IndexPageView(TemplateView):
 # class AddProductView(TemplateView):
     # template_name = 'dashboard/add_product.html'
 
+class EditProfileView(TemplateView):
+    template_name = 'dashboard/edit_profile.html'
+
 class ProductsView(TemplateView):
     template_name = 'dashboard/products.html'
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        user = self.request.user
+        check_vendor = Vendor.objects.get(user=user)
+        if check_vendor:
+            print("yes he is a vendor go ahead")
+            shop = Shop.objects.get(vendor=check_vendor)
+            products = Product.objects.filter(shop=shop)
+        context['products'] = products
+        return context
+
+class OrdersView(TemplateView):
+    template_name = 'dashboard/orders.html'
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         user = self.request.user

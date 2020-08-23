@@ -52,3 +52,22 @@ class ShopPageView(TemplateView):
 
 class ChangeLanguageView(TemplateView):
     template_name = 'main/change_language.html'
+
+class contactPageView(TemplateView):
+    template_name = 'main/contact.html'
+
+class product_detailPageView(TemplateView):
+        template_name = 'main/product_detail.html'
+
+class shop_cartPageView(TemplateView):
+        template_name = 'main/shop_cart.html'
+
+class checkoutPageView(TemplateView):
+        template_name = 'main/checkout.html'
+
+
+class project_managmentPageView(TemplateView):
+    template_name = 'main/project_managment.html'
+
+
+
